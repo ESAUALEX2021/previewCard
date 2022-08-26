@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue1 : hsl(217, 54%, 11%);  /* (main BG) */
+    --Very-dark-blue2 : hsl(216, 50%, 16%);  /* (card BG) */
+    --Very-dark-blue3 : hsl(215, 32%, 27%);  /* (line)*/
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: var(--Very-dark-blue1);
+}
+.card__conteiner{
+    width: 350px;
+    height: 555px;
+    margin: 40px auto;
+    background-color: var(--Very-dark-blue2);
+    padding: 15px;
+    border-radius: 15px;
+
+}
+.card__conteiner-img {
+    background-image: url(./images/image-equilibrium.jpg);
+    width: 100%;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.img__view{
+    background-color: hsl(178, 100%, 50%, .5);;
+    background-image: url(/images/icon-view.svg) ;
+    width: 100%;
+    height: 100%;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    opacity: 0;
+}
+.img__view:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.card__title{
+    color: var(--White);
+    font-weight: 600;
+    font-size: 25px;
+    margin: 15px 0 15px 0;
+}
+
+.card__description{
+    margin: 15px 0 15px 0;
+    color: var(--Soft-blue);
+}
+.card__type-money{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.card__type-money__etehr, .card__days{
+    display: flex;
+    width: 120px;
+}
+.card__type-money__etehr img{
+    padding-right: 7px;
+}
+.card__type-money__etehr-information{
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+.card__days-img{
+    height: 100%;
+    padding-right: 5px;
+}
+.card__days-information{
+    color: var(--Soft-blue);
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--Very-dark-blue3);
+    margin: 20px 0 20px 0;
+}
+.author{
+    display: flex;
+}
+.author__img{
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+.author__information{
+    display: flex;
+    padding-left:13px ;
+    align-items: center;
+    color: var(--Soft-blue);
+}
+a{
+    text-decoration: none;
+    color: var(--White);
+}
+a:hover, h1:hover{
+    color: var(--Cyan);
+}
+span{
+    color: var(--White);
+}
+.attribution {
+    font-size: 15px;
+    text-align: center;
+    }
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
